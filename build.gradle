@@ -14,6 +14,10 @@ repositories {
 	// for more information about repositories.
 }
 
+base {
+	archivesName = "EnchantmentPlus-1.21.1-Fabric"
+}
+
 loom {
 	splitEnvironmentSourceSets()
 
