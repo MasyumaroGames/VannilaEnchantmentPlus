@@ -28,6 +28,7 @@
   ],
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,
+  "supported_in_creative_tab": true,
   "discoverable": true,
   "tradeable": true
 }
