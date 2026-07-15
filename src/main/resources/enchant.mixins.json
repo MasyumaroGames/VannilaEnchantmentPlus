@@ -4,7 +4,9 @@
   "compatibilityLevel": "JAVA_21",
   "refmap": "enchant.refmap.json",
   "mixins": [
-    "ItemStackMixin"
+    "ItemStackMixin",
+    "EnchantmentMixin",
+    "AnvilMenuMixin"
   ],
   "injectors": {
     "defaultRequire": 1
