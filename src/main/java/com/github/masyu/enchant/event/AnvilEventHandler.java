@@ -1,4 +1,4 @@
-package com.github.masyu.enchant;
+package com.github.masyu.enchant.event;
 
 import net.minecraft.core.Holder;
 import net.minecraft.world.item.ItemStack;

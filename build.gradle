@@ -31,7 +31,7 @@ repositories {
 }
 
 base {
-    archivesName = "EnchantmentPlus-1.21.1-NeoForge"
+    archivesName = "Vanilla Enchantment Plus-1.21.1-NeoForge"
 }
 
 // Mojang ships Java 21 to end users in 1.21.1, so mods should target Java 21.
