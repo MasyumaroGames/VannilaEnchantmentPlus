@@ -15,7 +15,7 @@ repositories {
 }
 
 base {
-	archivesName = "EnchantmentPlus-1.21.1-Fabric"
+	archivesName = "Vanilla Enchantment Plus-1.21.1-Fabric"
 }
 
 loom {
