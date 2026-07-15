@@ -1,5 +1,6 @@
 package com.github.masyu.enchant.mixin;
 
+import com.github.masyu.enchant.regi.ModConfig;
 import com.github.masyu.enchant.regi.ModEnchantment;
 import net.minecraft.world.inventory.AnvilMenu;
 import net.minecraft.world.inventory.DataSlot;
@@ -40,9 +41,9 @@ public class AnvilMenuMixin {
             return 1;
         }
         if (instance == Enchantments.KNOCKBACK || instance == Enchantments.PUNCH_ARROWS) {
-            return 5;
+            return ModConfig.SPECIAL_ENCHANT_MAX_LEVEL.get();
         }
-        return 10;
+        return ModConfig.ENCHANT_MAX_LEVEL.get();
     }
 
     @Redirect(

@@ -1,5 +1,6 @@
 package com.github.masyu.enchant.event;
 
+import com.github.masyu.enchant.regi.ModConfig;
 import com.github.masyu.enchant.regi.ModEnchantment;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
@@ -28,7 +29,7 @@ public class VillagerTradeHandler {
 
             // レベル5交易
             List<VillagerTrades.ItemListing> trades =
-                    event.getTrades().get(5);
+                    event.getTrades().get(ModConfig.UNBREAKABLE_VILLAGER_TRADE_LEVEL.get());
 
             trades.add((trader, random) -> new MerchantOffer(
 
@@ -47,7 +48,7 @@ public class VillagerTradeHandler {
                     ),
 
                     // 最大取引回数
-                    3,
+                    4,
 
                     // 経験値
                     30,

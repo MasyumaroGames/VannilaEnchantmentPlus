@@ -1,5 +1,6 @@
 package com.github.masyu.enchant.event;
 
+import com.github.masyu.enchant.regi.ModConfig;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.npc.VillagerProfession;
@@ -26,7 +27,7 @@ public class VillagerTradeHandlerVannila {
         if (event.getType() == VillagerProfession.LIBRARIAN) {
 
             List<VillagerTrades.ItemListing> trades =
-                    event.getTrades().get(5);
+                    event.getTrades().get(ModConfig.VILLAGER_TRADE_LEVEL.get());
 
             trades.add((trader, random) -> {
 
@@ -51,7 +52,7 @@ public class VillagerTradeHandlerVannila {
                                 new EnchantmentInstance(enchantment, level)
                         ),
 
-                        3,
+                        4,
                         30,
                         0.0F
                 );

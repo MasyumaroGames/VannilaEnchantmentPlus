@@ -1,10 +1,10 @@
 package com.github.masyu.enchant;
 
+import com.github.masyu.enchant.regi.ModConfig;
 import com.github.masyu.enchant.regi.ModEnchantment;
 import com.github.masyu.enchant.regi.ModTabs;
-import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -17,6 +17,9 @@ public class Enchant {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ModEnchantment.ENCHANTMENTS.register(bus);
         ModTabs.MOD_TABS.register(bus);
+        ModLoadingContext.get().registerConfig(
+                net.minecraftforge.fml.config.ModConfig.Type.COMMON,
+                ModConfig.COMMON);
     }
 
 }
