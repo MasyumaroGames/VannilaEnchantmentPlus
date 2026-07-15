@@ -24,7 +24,7 @@ license="${mod_license}"
 modId="enchant" #mandatory
 
 # The version number of the mod
-version="1.30" #mandatory
+version="${mod_version}" #mandatory
 
 # A display name for the mod
 displayName="EnchantmentPlus" #mandatory
