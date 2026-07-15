@@ -20,7 +20,7 @@ repositories {
 }
 
 base {
-	archivesName = "Vanilla Enchantment Plus-1.21.4-Fabric"
+	archivesName = "Vanilla Enchantment Plus-1.21.8-Fabric"
 }
 
 loom {
@@ -43,7 +43,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-	modImplementation "curse.maven:forge-config-api-port-fabric-547434:7213616"
+	modImplementation "curse.maven:forge-config-api-port-fabric-547434:7213622"
 
 	implementation "com.electronwill.night-config:core:3.8.4"
 	implementation "com.electronwill.night-config:toml:3.8.4"

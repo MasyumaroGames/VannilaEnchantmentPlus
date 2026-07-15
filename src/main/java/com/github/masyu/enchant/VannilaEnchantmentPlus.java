@@ -1,7 +1,7 @@
 package com.github.masyu.enchant;
 
 import com.github.masyu.enchant.regi.ModConfig;
-import fuzs.forgeconfigapiport.fabric.api.neoforge.v4.NeoForgeConfigRegistry;
+import fuzs.forgeconfigapiport.fabric.api.v5.ConfigRegistry;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.ResourceLocation;
@@ -23,7 +23,7 @@ public class VannilaEnchantmentPlus implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		NeoForgeConfigRegistry.INSTANCE.register(MODID, net.neoforged.fml.config.ModConfig.Type.COMMON, ModConfig.COMMON);
+		ConfigRegistry.INSTANCE.register(MODID, net.neoforged.fml.config.ModConfig.Type.COMMON, ModConfig.COMMON);
 
 	}
 
